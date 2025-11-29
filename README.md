@@ -1,0 +1,2 @@
+# TPM_BE_MiniProject1_ShaneSutjipto_Kelompok12
+TPM_BE Week 1
