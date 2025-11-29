@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head><title><%= title %></title></head>
+<body style="font-family: sans-serif; padding: 20px;">
+    <h2>Manifest Penumpang (Data JSON)</h2>
+    <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nama</th>
+                <th>Tujuan</th>
+                <th>Penumpang</th>
+                <th>Total Biaya</th>
+                <th>Tanggal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% bookings.forEach(booking => { %>
+                <tr>
+                    <td><%= booking.id %></td>
+                    <td><%= booking.name %></td>
+                    <td><%= booking.destination %></td>
+                    <td><%= booking.travelers %></td>
+                    <td><%= booking.totalCost %></td>
+                    <td><%= booking.date %></td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+    <br>
+    <a href="/">Kembali ke Home</a>
+</body>
+</html>
